@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Salário</title>
+    <link rel="stylesheet" href="calculadora.css">
+</head>
+<body>
+    <main>
+        <h1 id ='principal'>Salário &#x1F4B8;</h1>
+        <p id="p1">Lorem ipsum dolor sit amet consectetur adipisicing elit. Itaque alias voluptatibus nam dolores fugit, earum quis eveniet, quia odio explicabo assumenda dignissimos ratione quaerat deserunt iste cum, et architecto. Similique laboriosam maxime quasi ipsam delectus fugit minus debitis totam saepe placeat, non ad nemo vel ut, alias corporis quia deleniti?</p>
+
+        <p id="p2">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Harum, tempora minus! Esse vero quas quibusdam adipisci mollitia id illum assumenda tempora, magnam iste, aliquid, dolores earum ipsam ipsum nesciunt eum nulla quo consequuntur facilis excepturi. Libero, dolorum itaque praesentium ipsum asperiores molestiae quo eaque mollitia, quidem, commodi fugiat laboriosam. Saepe?</p>
+        <input type="number" name="txtv1" id="txtv1"> + 
+        <input type="number" name="txtv2" id="txtv2">
+        <input type="button" value="Calcular" onclick="clicar()" id="button">
+        <div id='res'></div>
+        
+        <section>
+            <h2>Dinheiro</h2>
+            <p id='p3'>Lorem ipsum dolor sit amet consectetur adipisicing elit. Porro obcaecati suscipit adipisci. Assumenda, libero voluptas tempora nam maiores, in eum dolor ipsam iusto blanditiis qui optio aperiam pariatur explicabo minus perferendis tempore distinctio ullam soluta sint aliquid et. Repudiandae, animi error rem veniam repellendus itaque enim officia ipsa libero explicabo.</p>
+
+        </section>
+    </main>
+    
+    <script>
+    function clicar() {
+        var tx1 = document.getElementById ("txtv1")
+        var tx2 = document.getElementById ("txtv2")
+        var res = document.getElementById ("res")
+        var n1 = Number(tx1.value)
+        var n2 = Number(tx2.value)
+        var s = n1 + n2
+        s = s.toLocaleString ('pt-Br' , {style: 'currency' , currency: 'BRL'})
+        res.innerHTML = `O seu salário vai ser de ${s}`
+    }
+    </script>
+</body>
+</html>

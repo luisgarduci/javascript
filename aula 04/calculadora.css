@@ -1,0 +1,113 @@
+@charset "UTF-8";
+
+@font-face {
+    font-family: 'Varsity' , 'cursive';
+    src: url(https://www.dafont.com/pt/varsity-2.font) format('opentype');
+}
+
+* {
+    margin: 0px;
+    padding: 0px;
+}
+
+body {
+    background-color: gray;
+    font-family: 'Varsity' , 'cursive';
+}
+
+main {
+    background-color: white;
+    width: 800px;
+    padding: 50px;
+    margin: auto;
+    border-radius: 8px;
+    box-shadow: 2px 2px 10px black;
+}
+
+#principal {
+    font-size: 40px;
+    text-align: center;
+    margin-bottom: 20px;
+    text-decoration: underline;
+}
+
+p {
+    text-align: center;
+    line-height: 30px;
+    font-size: 20px;
+}
+
+#txtv1 {
+    padding: 8px;
+    margin-top: 40px;
+    margin-left: 175px;
+    margin-right: 10px;
+}
+
+#txtv2 {
+    padding: 8px;
+    margin-top: 40px;
+    margin-left: 15px;
+    margin-right: 10px;
+}
+
+#button {
+    padding: 5px;
+    margin-left: 10px;
+    font-weight: bold;
+}
+
+#res {
+    margin-top: 20px;
+    font-weight: bold;
+    font-size: 20px;
+}
+
+#calculadora {
+    display: block;
+    margin: auto;
+    margin-top: 10px;
+}
+
+section {
+    margin-top: 40px;
+}
+
+h2 {
+    text-align: center;
+    font-weight: bolder;
+    margin-bottom: 10px;
+}
+
+.hidden {
+    width: 100px;
+    padding: 30px;
+    display: inline-block;
+    background-color: gray;
+    border: 1px solid black;
+    margin-left: 70px;
+    margin-top: 40px;
+}
+
+.hidden:hover {
+    background-color: blue;
+}
+
+div:hover > .hiddentext {
+    visibility: visible;
+}
+
+div > .hiddentext {
+    visibility: hidden;
+    text-align: center;
+}
+
+.hidden:active {
+    background-color: red;
+}
+
+
+
+
+
+
