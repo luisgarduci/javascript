@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="pt-bt">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="js.png" type="image/x-icon">
+    <title>Calculadora</title>
+    <style type="text/css">
+        * {
+            margin: 0px;
+            padding: 0px;
+        }
+
+        main {
+            width: 500px;
+            height: 200px;
+            padding: 20px;
+            border-radius: 5px;
+            border: 1px solid black;
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            -webkit-transform: translate(-50%, -50%)
+        }
+
+        main > h1 {
+            text-align: center;
+        }
+        
+        main > .inputs {
+           padding: 5px;
+           text-align: center;
+        }
+
+        main > #txtv1 {
+           margin-left: 55px;
+           margin-top: 15px;
+        }
+
+        main > #txtv2 {
+
+        }
+
+        #operador {
+            margin-left: 195px;
+            margin-top: 20px;
+            width: 100px;
+        }
+
+
+    </style>
+</head>
+<body>
+    <main>
+        <h1>Calculadora Simples</h1>
+        <input type="number" name="txtv1" id="txtv1" required placeholder="Digite um número" maxlength="20" class="inputs"> <span id="span1">?</span>
+        <input type="number" name="txtv2" id="txtv2" required placeholder="Digite outro número" maxlength="20" class="inputs"> <br>
+        <input type="submit" value="Operador" class="inputs" id="operador" onclick="clicar()">
+        <div id="resultado"></div>
+    </main>
+    <script src="pag02.js"></script>
+</body>
+</html>
