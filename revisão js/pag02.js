@@ -5,7 +5,7 @@ function clicar () {
     switch (btnoperador) {
         case "+":
         ispan.innerHTML = "+"
-        operador.value = "Somar"
+        operador.value = "Somar" 
         break;
         case "-":
         ispan.innerHTML = "-"
